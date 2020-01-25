@@ -1,0 +1,29 @@
+﻿<Window x:Class="Project1_BatchRename.HelpDiaglog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project1_BatchRename"
+        mc:Ignorable="d"
+         Title="GUILD" Height="500" Width="650">
+    <StackPanel>
+        <StackPanel>
+            <TextBlock Name="header" TextAlignment="Center" FontSize="20" FontWeight="Bold" Margin="20,0,0,0"></TextBlock>
+            <TextBlock x:Name="cn1_h" FontWeight="Bold"  Margin="20,0,0,0">1. Chức năng thay thế (REPLACE):</TextBlock>
+            <TextBlock x:Name="cn1" Margin="20,0,0,0"></TextBlock>
+            <TextBlock x:Name="cn2_h" FontWeight="Bold"  Margin="20,0,0,0">2. Chức năng thay đổi kiểu chữ (NEW CASE):</TextBlock>
+            <TextBlock x:Name="cn2" Margin="20,0,0,0"></TextBlock>
+            <TextBlock x:Name="cn3_h" FontWeight="Bold"  Margin="20,0,0,0">3.Chuẩn hoá họ tên( Fullname normalize):</TextBlock>
+            <TextBlock x:Name="cn3" Margin="20,0,0,0"></TextBlock>
+            <TextBlock x:Name="cn4_h" FontWeight="Bold"  Margin="20,0,0,0">4.Thay đổi vị trí (MOVE):</TextBlock>
+            <TextBlock x:Name="cn4" Margin="20,0,0,0"></TextBlock>
+            <TextBlock x:Name="cn5_h" FontWeight="Bold"  Margin="20,0,0,0">5.Đặt tên duy nhất (Unique name):</TextBlock>
+            <TextBlock x:Name="cn5" Margin="20,0,0,0"></TextBlock>
+            <TextBlock x:Name="cn6_h" FontWeight="Bold"  Margin="20,0,0,0">6.Loại bỏ một pattetn trong tên(Remove Pattern):</TextBlock>
+            <TextBlock x:Name="cn6" Margin="20,0,0,0"></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="OK" Click="Exit" Width="80" Height="25" Margin="500,15,0,15"></Button>
+        </StackPanel>
+    </StackPanel>
+</Window>

@@ -1,0 +1,93 @@
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1-BatchRename.csprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\FullnameNormalizeDialog.g.cs
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\MainWindow.g.cs
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\MoveDialog.g.cs
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\NewCaseDialog.g.cs
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\NewNameDialog.g.cs
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\RemovePatternDialog.g.cs
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\ReplaceDialog.g.cs
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\SaveDialog.g.cs
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\App.g.cs
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1-BatchRename_MarkupCompile.cache
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1-BatchRename_MarkupCompile.lref
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\bin\Debug\Project1-BatchRename.exe.config
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\bin\Debug\Project1-BatchRename.exe
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\bin\Debug\Project1-BatchRename.pdb
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\App.baml
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\FullnameNormalizeDialog.baml
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\MainWindow.baml
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\MoveDialog.baml
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\NewCaseDialog.baml
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\NewNameDialog.baml
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\RemovePatternDialog.baml
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\ReplaceDialog.baml
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\SaveDialog.baml
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1-BatchRename.g.resources
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1_BatchRename.Properties.Resources.resources
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1-BatchRename.csproj.GenerateResource.cache
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1-BatchRename.exe
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1-BatchRename.pdb
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\HelpDialog.g.cs
+C:\Users\ASUS\source\repos\Project1-BatchRename\Project1-BatchRename\obj\Debug\HelpDialog.baml
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\bin\Debug\Project1-BatchRename.exe.config
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\bin\Debug\Project1-BatchRename.exe
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\bin\Debug\Project1-BatchRename.pdb
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1-BatchRename.csprojAssemblyReference.cache
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\FullnameNormalizeDialog.g.cs
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\HelpDialog.g.cs
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\MainWindow.g.cs
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\MoveDialog.g.cs
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\NewCaseDialog.g.cs
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\NewNameDialog.g.cs
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\RemovePatternDialog.g.cs
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\ReplaceDialog.g.cs
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\SaveDialog.g.cs
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\App.g.cs
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1-BatchRename_MarkupCompile.cache
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1-BatchRename_MarkupCompile.lref
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\App.baml
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\FullnameNormalizeDialog.baml
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\HelpDialog.baml
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\MainWindow.baml
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\MoveDialog.baml
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\NewCaseDialog.baml
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\NewNameDialog.baml
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\RemovePatternDialog.baml
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\ReplaceDialog.baml
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\SaveDialog.baml
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1-BatchRename.g.resources
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1_BatchRename.Properties.Resources.resources
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1-BatchRename.csproj.GenerateResource.cache
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1-BatchRename.exe
+D:\IT\Year 3\Windows\Project\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1-BatchRename.pdb
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\bin\Debug\Project1-BatchRename.exe.config
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\bin\Debug\Project1-BatchRename.exe
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\bin\Debug\Project1-BatchRename.pdb
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1-BatchRename.csprojAssemblyReference.cache
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\FullnameNormalizeDialog.g.cs
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\HelpDialog.g.cs
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\MainWindow.g.cs
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\MoveDialog.g.cs
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\NewCaseDialog.g.cs
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\NewNameDialog.g.cs
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\RemovePatternDialog.g.cs
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\ReplaceDialog.g.cs
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\SaveDialog.g.cs
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\App.g.cs
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1-BatchRename_MarkupCompile.cache
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1-BatchRename_MarkupCompile.lref
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\App.baml
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\FullnameNormalizeDialog.baml
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\HelpDialog.baml
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\MainWindow.baml
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\MoveDialog.baml
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\NewCaseDialog.baml
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\NewNameDialog.baml
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\RemovePatternDialog.baml
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\ReplaceDialog.baml
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\SaveDialog.baml
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1-BatchRename.g.resources
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1_BatchRename.Properties.Resources.resources
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1-BatchRename.csproj.GenerateResource.cache
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1-BatchRename.exe
+F:\USER\Downloads\Final_3\Project1-BatchRename\Project1-BatchRename\obj\Debug\Project1-BatchRename.pdb

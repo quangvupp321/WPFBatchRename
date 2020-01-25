@@ -1,0 +1,309 @@
+﻿<Window x:Class="Project1_BatchRename.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project1_BatchRename"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="Batch Rename" 
+        Height="550" Width="1000"
+        MinHeight="550" MinWidth="1000"
+        MaxHeight="550" MaxWidth="1000">
+
+    <StackPanel x:Name="mainStackPanel">
+        <!-- .................................................................. -->
+        <DockPanel LastChildFill="True">
+            <!--Refresh-->
+            <Button x:Name="refreshBtn" Click="refreshBtn_Click" BorderThickness="0,0,1,0" Padding="10,2,10,2">
+                <StackPanel Orientation="Horizontal">
+                    <Image x:Name="refreshIcon" ></Image>
+                    <TextBlock Text=" Refresh "></TextBlock>
+                </StackPanel>
+            </Button>
+
+            <!--Help-->
+            <Button x:Name="helpBtn" Click="helpBtn_Click" BorderThickness="0,0,1,0" Padding="10,2,10,2">
+                <StackPanel Orientation="Horizontal">
+                    <Image x:Name="helpIcon"></Image>
+                    <TextBlock Text=" Help "></TextBlock>
+                    <Image x:Name="dropdownIcon"></Image>
+                </StackPanel>
+            </Button>
+
+            <!--START-->
+            <Button x:Name="startBtn" Click="startBtn_Click" BorderThickness="0,0,0,0" Padding="10,2,10,2" HorizontalContentAlignment="Left">
+                <StackPanel Orientation="Horizontal">
+                    <Image x:Name="startIcon"></Image>
+                    <TextBlock Text=" START BATCH "></TextBlock>
+                </StackPanel>
+            </Button>
+        </DockPanel>
+        <!-- .................................................................. -->
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="7*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Orientation="Vertical" Grid.Column="0" Height="465">
+                <!--............................................................-->
+                <DockPanel LastChildFill="True">
+                    <!--Add Method-->
+                    <Button  BorderThickness="0,1,1,1">
+                        <StackPanel Orientation="Horizontal">
+                            <Image x:Name="methodIcon"></Image>
+                            <TextBlock Text=" Add Method "></TextBlock>
+                            <Image x:Name="dropdownIcon1"></Image>
+                        </StackPanel>
+                    </Button>
+
+                    <!--Clear-->
+                    <Button  BorderThickness="0,1,1,1" x:Name="clearBtn" Click="refreshBtn_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Image x:Name="clear1Icon" Margin="5,0,0,0"></Image>
+                            <Image x:Name="clear2Icon" Margin="5,0,5,0"></Image>
+                            <TextBlock Text=" Clear "></TextBlock>
+                        </StackPanel>
+                    </Button>
+
+                    <!--Type-->
+                    <Button  BorderThickness="0,1,1,1" x:Name="typeBtn" >
+                        <StackPanel Orientation="Horizontal">
+                            <Image x:Name="typeIcon" Margin="5,0,0,0"></Image>
+                            <TextBlock Text="Type: " FontSize="10"></TextBlock>
+                            <ComboBox x:Name="typeCB" Height="15" Width="65" FontSize="8"></ComboBox>
+                        </StackPanel>
+                    </Button>
+                </DockPanel>
+                <DockPanel  LastChildFill="True">
+                    <!--Save-->
+                    <Button Padding="10,2,10,2" x:Name="saveBtn" Click="saveBtn_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Image x:Name="saveIcon"/>
+                            <TextBlock Text="  Save "/>
+                        </StackPanel>
+                    </Button>
+                    <Button>
+                        <!-- Presets   -->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text=" Presets:   " FontWeight="Bold"></TextBlock>
+                            <ComboBox Width="150" Height="18" Name="presets_cb" SelectionChanged="LoadSavePreset"></ComboBox>
+                        </StackPanel>
+                    </Button>
+                </DockPanel>
+
+                <!--............................................................-->
+                <!--New Case TextBlock-->
+                <Border BorderBrush="Black" BorderThickness="1" Margin="5,5,5,10">
+                    <Grid>
+                        <Button x:Name="NewCaseArea" Click="NewCaseArea_Click" Style="{StaticResource ResourceKey=button_feature}" Height="24" VerticalAlignment="Top">
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="image_add_1"></Image>
+                                <TextBlock FontSize="15" Padding="20,0,0,0">New Case</TextBlock>
+                                <CheckBox x:Name="newcase_cb" IsChecked="False" Margin="130,2,10,0" Checked="CheckBox_Feature_Checked" Unchecked="CheckBox_Feature_Checked"></CheckBox>
+                                <Image x:Name="image_x_1" Margin="0,1,10,1"></Image>
+                            </StackPanel>
+                        </Button>
+                    </Grid>
+                </Border>
+                <!--............................................................-->
+                <!--Move TextBlock-->
+                <Border BorderBrush="Black" BorderThickness="1" Margin="5,0,5,10">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="9*"/>
+                            <ColumnDefinition Width="134*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="MoveArea" Click="MoveArea_Click" Style="{StaticResource ResourceKey=button_feature}" Grid.ColumnSpan="2">
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="image_add_2"></Image>
+                                <TextBlock FontSize="15" Padding="20,0,0,0">Move</TextBlock>
+                                <CheckBox x:Name="move_cb" IsChecked="False" Margin="158,2,10,0" Checked="CheckBox_Feature_Checked" Unchecked="CheckBox_Feature_Checked"></CheckBox>
+                                <Image x:Name="image_x_2" Margin="0,1,10,1"></Image>
+                            </StackPanel>
+                        </Button>
+                    </Grid>
+                </Border>
+                <!--............................................................-->
+                <!--Remove TextBlock-->
+                <Border BorderBrush="Black" BorderThickness="1" Margin="5,0,5,10">
+                    <Grid>
+                        <Button x:Name="RemoveArea" Click="RemoveArea_Click" Style="{StaticResource ResourceKey=button_feature}">
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="image_add_3"></Image>
+                                <TextBlock FontSize="15" Padding="20,0,0,0">Remove pattern</TextBlock>
+                                <CheckBox x:Name="remove_cb" IsChecked="False" Margin="86,2,10,0" Checked="CheckBox_Feature_Checked" Unchecked="CheckBox_Feature_Checked"></CheckBox>
+                                <Image x:Name="image_x_3" Margin="0,1,10,1"></Image>
+                            </StackPanel>
+                        </Button>
+                    </Grid>
+                </Border>
+                <!--............................................................-->
+                <!--Replace TextBlock-->
+                <Border BorderBrush="Black" BorderThickness="1" Margin="5,0,5,10">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="97*"/>
+                            <ColumnDefinition Width="46*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="ReplaceArea" Click="ReplaceArea_Click" Style="{StaticResource ResourceKey=button_feature}" Grid.ColumnSpan="2">
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="image_add_4"></Image>
+                                <TextBlock FontSize="15" Padding="20,0,0,0">Replace</TextBlock>
+                                <CheckBox x:Name="replace_cb" IsChecked="False" Margin="146,2,10,0" Checked="CheckBox_Feature_Checked" Unchecked="CheckBox_Feature_Checked"></CheckBox>
+                                <Image x:Name="image_x_4" Margin="0,1,10,1"></Image>
+                            </StackPanel>
+                        </Button>
+                    </Grid>
+                </Border>
+                <!--............................................................-->
+                <!--Trim TextBlock-->
+                <Border BorderBrush="Black" BorderThickness="1" Margin="5,0,5,10">
+                    <Grid>
+                        <Button x:Name="TrimArea" Click="TrimArea_Click" Style="{StaticResource ResourceKey=button_feature}">
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="image_add_5"></Image>
+                                <TextBlock FontSize="15" Padding="20,0,0,0">Trim</TextBlock>
+                                <CheckBox x:Name="trim_cb" IsChecked="False" Margin="168,2,10,0" Checked="CheckBox_Feature_Checked" Unchecked="CheckBox_Feature_Checked"></CheckBox>
+                                <Image x:Name="image_x_5" Margin="0,1,10,1"></Image>
+                            </StackPanel>
+                        </Button>
+                    </Grid>
+                </Border>
+                <!--............................................................-->
+                <!--New Name TextBlock-->
+                <Border BorderBrush="Black" BorderThickness="1" Margin="5,0,5,10">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="90*"/>
+                            <ColumnDefinition Width="7*"/>
+                            <ColumnDefinition Width="46*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="NewNameArea" Click="NewNameArea_Click" Style="{StaticResource ResourceKey=button_feature}" Grid.ColumnSpan="3" >
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="image_add_6"></Image>
+                                <TextBlock FontSize="15" Padding="20,0,0,0">New Name</TextBlock>
+                                <CheckBox x:Name="newname_cb" IsChecked="False" Margin="122,2,10,0" Checked="CheckBox_Feature_Checked" Unchecked="CheckBox_Feature_Checked"></CheckBox>
+                                <Image x:Name="image_x_6" Margin="0,1,10,1"></Image>
+                            </StackPanel>
+                        </Button>
+                    </Grid>
+                </Border>
+                <!--............................................................-->
+                <!--Path TextBlock-->
+                <TextBlock Margin="10,20,0,0" FontSize="20" FontWeight="Bold">Path:</TextBlock>
+                <Border BorderBrush="Black" BorderThickness="1" Height="130" Margin="10,0,10,0">
+                    <Grid>
+                        <TextBlock Height="130" x:Name="batch_tb" Text="{Binding}">
+
+                        </TextBlock>
+                    </Grid>
+                </Border>
+
+            </StackPanel>
+            <!--Tab Files and Folders-->
+            <TabControl Grid.Column="1">
+                <!--  Files  -->
+                <TabItem Header="Rename Files">
+                    <StackPanel>
+                        <!-- Button Add -->
+                        <Button x:Name="addFilesBtn" Click="addFilesBtn_Click"  Width="80" HorizontalAlignment="Left">
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="addfilesIcon"></Image>
+                                <TextBlock Text=" Add Files " FontWeight="Bold"></TextBlock>
+                            </StackPanel>
+                        </Button>
+
+                        <DataGrid x:Name="lvFiles" AutoGenerateColumns="False" HeadersVisibility="Column" GridLinesVisibility="None" Height="420">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Filename" Width="170" Binding="{Binding Path=fileName}" >
+                                    <DataGridTextColumn.CellStyle>
+                                        <Style TargetType="DataGridCell">
+                                            <Setter Property="BorderBrush" Value="Blue" />
+                                            <Setter Property="BorderThickness" Value="1,0,1,1" />
+                                        </Style>
+                                    </DataGridTextColumn.CellStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="New Filename" Width="170" Binding="{Binding Path=newFilename}" >
+                                    <DataGridTextColumn.CellStyle>
+                                        <Style TargetType="DataGridCell">
+                                            <Setter Property="BorderBrush" Value="Blue" />
+                                            <Setter Property="BorderThickness" Value="0,0,1,1" />
+                                        </Style>
+                                    </DataGridTextColumn.CellStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Path" Width="170"  Binding="{Binding Path=path}">
+                                    <DataGridTextColumn.CellStyle>
+                                        <Style TargetType="DataGridCell">
+                                            <Setter Property="BorderBrush" Value="Blue" />
+                                            <Setter Property="BorderThickness" Value="0,0,1,1" />
+                                        </Style>
+                                    </DataGridTextColumn.CellStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Error" Width="170">
+                                    <DataGridTextColumn.CellStyle>
+                                        <Style TargetType="DataGridCell">
+                                            <Setter Property="BorderBrush" Value="Blue" />
+                                            <Setter Property="BorderThickness" Value="0,0,1,1" />
+                                        </Style>
+                                    </DataGridTextColumn.CellStyle>
+                                </DataGridTextColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="Rename Folders">
+                    <StackPanel>
+                        <!-- Button Add -->
+                        <Button x:Name="addFoldesBtn" Click="addFoldersBtn_Click"  Width="110" HorizontalAlignment="Left">
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="addFoldersIcon"></Image>
+                                <TextBlock Text=" Add Folders " FontWeight="Bold"></TextBlock>
+                            </StackPanel>
+                        </Button>
+
+                        <DataGrid x:Name="lvFolders" AutoGenerateColumns="False" HeadersVisibility="Column" GridLinesVisibility="None" Height="420">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Foldername" Width="170" Binding="{Binding Path=fileName}" >
+                                    <DataGridTextColumn.CellStyle>
+                                        <Style TargetType="DataGridCell">
+                                            <Setter Property="BorderBrush" Value="Blue" />
+                                            <Setter Property="BorderThickness" Value="1,0,1,1" />
+                                        </Style>
+                                    </DataGridTextColumn.CellStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="New Foldername" Width="170" Binding="{Binding Path=newFilename}" >
+                                    <DataGridTextColumn.CellStyle>
+                                        <Style TargetType="DataGridCell">
+                                            <Setter Property="BorderBrush" Value="Blue" />
+                                            <Setter Property="BorderThickness" Value="0,0,1,1" />
+                                        </Style>
+                                    </DataGridTextColumn.CellStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Path" Width="170"  Binding="{Binding Path=path}">
+                                    <DataGridTextColumn.CellStyle>
+                                        <Style TargetType="DataGridCell">
+                                            <Setter Property="BorderBrush" Value="Blue" />
+                                            <Setter Property="BorderThickness" Value="0,0,1,1" />
+                                        </Style>
+                                    </DataGridTextColumn.CellStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Error" Width="170">
+                                    <DataGridTextColumn.CellStyle>
+                                        <Style TargetType="DataGridCell">
+                                            <Setter Property="BorderBrush" Value="Blue" />
+                                            <Setter Property="BorderThickness" Value="0,0,1,1" />
+                                        </Style>
+                                    </DataGridTextColumn.CellStyle>
+                                </DataGridTextColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+                </TabItem>
+            </TabControl>
+        </Grid>
+    </StackPanel>
+
+</Window>
